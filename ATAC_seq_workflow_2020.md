@@ -143,6 +143,10 @@ Call peaks with MACS2 https://github.com/macs3-project/MACS.
 
 ```
 macs2 callpeak -t <BAM> -f BAMPE -n <sample_name> -g mm -q 0.05 --keep-dup 1 --outdir <out_dir>
+
+# Aternatively call with options set to broad peaks
+macs2 callpeak -t <BAM> -f BAMPE --broad --broad-cutoff 0.05 -n <SAMPLE_NAME> -g mm --keep-dup 1 --outdir <OUT_DIR>
+
 ```
 -BAMPE - force MACS to use full length fragments taking the advantage of paired-end nature of the data.
 
